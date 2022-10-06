@@ -14,10 +14,33 @@
         console.log("EJERCICIO 3")
 
         console.log("solicita una frase al usuario e imprime el número de palabras que tiene");
-        const frase = prompt("Asumimos que todas las palabras estan separadas por un espacio");
+        //const frase = prompt("Asumimos que todas las palabras estan separadas por un espacio");
 
 
         // AQUÍ TU RESPUESTA. HAPPY CODING!!
+        /*
+        let frasecita = prompt("Escriba una frase")
+        
+        if (frasecita.indexOf(" ") = 0) {
+            console.log(frasecita + " tiene 1 palabra")}
+
+            else if (frasecita.indexOf(" ") = 1) {
+                console.log(frasecita + " tiene 2 palabras")
+            }
+            else if (frasecita.indexOf(" ") = 2) {
+                console.log(frasecita + " tiene 3 palabras")
+            }
+            else (frasecita.indexOf(" ") = 3) 
+                console.log(frasecita + " tiene 4 palabras")
+            
+                */
+
+        let frase = prompt("Escriba una frase")
+
+            var contapalabras = frase.trim().replace(/\s+/gi, ' ').split(' ').length;
+
+            console.log(contapalabras)
+
 
     </script>
 </body>
